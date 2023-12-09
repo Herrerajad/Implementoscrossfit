@@ -1,0 +1,146 @@
+body { 
+    font-family: 'Oswald'; 
+    background-color: gray; 
+    }
+
+    header, footer{
+        background-color: black;
+        color: white;
+        width: 99%;
+        min-height: 50px;
+        margin: 0.5rem;
+        min-width: 400px;
+        /*padding: 10px;*/
+        /*position: fixed;*/
+        }
+
+        h1{
+    
+            color:white;
+            font-family: 'Oswald';
+            padding:10px;
+            border-bottom: 3px solid rgb(248, 24, 24);
+            text-align:left;
+        }
+
+.contenedor-centrado { 
+    display: flex;
+     width: 100%; 
+     justify-content: center; 
+     }
+
+p {
+     font-family: 'Times New Roman', Times, serif; 
+     background-color: rgb(248, 24, 24); 
+     max-width: 400px; 
+     margin: 0 auto; 
+     padding: 20px; 
+     }
+
+h2, h3, h4, h5, h6 {
+    text-align: center; 
+    color: black; 
+    }
+
+form { 
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: white; 
+    border: 1px solid lightslategray; 
+    border-radius: 5px; 
+    }
+
+table { 
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: 
+    rgb(248, 24, 24); border: 
+    1px solid lightslategray; 
+    border-radius: 10px; 
+    }
+
+label { 
+    display: block; 
+    margin-bottom: 5px; 
+    }
+
+input[type="text"], input[type="number"], textarea { 
+    width: 90%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    }
+
+input[type="submit"] { 
+    padding: 10px; 
+    background-color:  rgb(248, 24, 24); 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+     }
+
+input[type="submit"]:hover {
+     background-color:  rgb(248, 24, 24); 
+     }
+
+button {
+    padding: 8px; 
+    margin: 4px; 
+    background-color:  rgb(248, 24, 24); 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    }
+
+button:hover { 
+    background-color:  rgb(248, 24, 24); 
+    }
+
+a { 
+    padding: 8px; 
+    margin: 4px; 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    font-size: 85%; 
+    }
+
+a:hover { 
+    background: linear-gradient(
+        90deg,
+        rgb(5, 0, 0) 0%,
+        hwb(0 29% 70% / 0.98) 77%);
+    color: whitesmoke;
+     }
+
+     
+footer>div {
+        border: 2px red solid;
+        min-height: 150px;
+        margin: 0rem;
+        height: auto;
+        clear: left;
+        background-color: black;
+        text-align: center;
+    }
+
+.redes {
+        color: white;
+        margin: 0px 6px;
+        font-size: 2vw;
+        text-align: center;    
+    }
+.redes:hover {
+        color: #0909fdfa;
+    }
+    
+
+    

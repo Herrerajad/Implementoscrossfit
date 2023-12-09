@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Producto</title>
+    <script src="https://kit.fontawesome.com/65b8680a6e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Static/img/Logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="Static/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+            <h1>
+                <img src="Static/img/Logo1.png" alt="Logo" width="50" height="60">
+                Modificar Productos del Inventario</h1>
+            </div>
+         </div>
+        </header>
+            <br>
+            <br>
+            
+    <div id="app"> 
+        <form @submit.prevent="obtenerProducto">
+             <label for="codigo">Código:</label> 
+             <input type="text" v-model="codigo" required><br> 
+             <button type="submit">Modificar Producto</button> 
+             <a href="index.html">Menu principal</a> 
+        </form>
+        
+        <div v-if="mostrarDatosProducto">
+             <h2>Datos del Producto</h2> 
+             <form @submit.prevent="guardarCambios"> 
+                <label for="descripcionModificar">Descripción:</label> 
+                <input type="text" id="descripcionModificar" v-model="descripcion" required><br>
+
+                <label for="cantidadModificar">Cantidad:</label> 
+                <input type="number" id="cantidadModificar" v-model="cantidad" required><br> 
+                
+                <label for="precioModificar">Precio:</label> 
+                <input type="number" step="0.01" id="precioModificar" v-model="precio" required><br> 
+                
+                <!-- Imagen actual del producto -->
+                 <!--<img v-if="imagen_url && !imagenSeleccionada" :src="'static/img/' + imagen_url" alt="Imagen del producto" style="max-width: 200px;"> -->
+                 <img v-if="imagen_url && !imagenSeleccionada" :src="'https://www.pythonanywhere.com/user/romulojgm/files/home/romulojgm/mysite/Static/img/' + imagen_url" alt="Imagen del producto" style="max-width: 200px;">
+                 
+                 <!-- Vista previa de la nueva imagen seleccionada --> 
+                 <img v-if="imagenSeleccionada" :src="imagenUrlTemp" alt="Vista previa de la nueva imagen" style="max-width: 200px;">
+
+                 <!-- Input para nueva imagen --> 
+                 <label for="nuevaImagen">Nueva Imagen:</label>
+                 <input type="file" id="nuevaImagen" @change="seleccionarImagen"><br> 
+                  
+                <label for="proveModificar">proveedor:</label>
+                <input type="number" id="proveModificar" v-model="proveedor" required><br> 
+                
+                <button type="submit">Guardar Cambios</button> 
+                <a href="modificaciones.html">Cancelar</a> 
+            </form> 
+        </div> 
+    </div> 
+    <script src="https://unpkg.com/vue@next"></script>
+     <script src="modificaciones.js"></script>
+    <br>
+    <br>
+    <br>
+ 
+    <footer>
+        <div>   
+        <br>
+        <br>
+        <a class="redes" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a class="redes" href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="redes" href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        <a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <h6 style="color: white; text-align: center; font-size: 75%;"> Programadores 2023 Derechos Reservados </h6>
+        </div>
+    </footer>
+    
+</body>
+</html>

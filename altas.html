@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <script src="https://kit.fontawesome.com/65b8680a6e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Static/img/Logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="Static/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+            <h1>
+                <img src="Static/img/Logo1.png" alt="Logo" width="50" height="60">
+                Agregar Productos al Inventario</h1>
+            </div>
+         </div>
+        </header>
+            <br>
+            <br>
+    <form id="formulario" enctype="multipart/form-data"> 
+        <label for="codigo">Código:</label> 
+        <input type="text" id="codigo" name="codigo" required><br> 
+
+        <label for="descripcion">Descripción:</label> 
+        <input type="text" id="descripcion" name="descripcion" required><br>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required><br> 
+         
+         <label for="precio">Precio:</label> 
+         <input type="number" step="0.01" id="precio" name="precio" required><br> 
+         
+         <label for="imagenProducto">Imagen del producto:</label>
+         <input type="file" id="imagenProducto" name="imagen"> 
+          
+          <label for="proveedorProducto">Proveedor:</label> 
+          <input type="text" id="proveedorProducto" name="proveedor"> 
+          <button type="submit">Agregar Producto</button> 
+          <a href="index.html">Menu principal</a> 
+          
+        </form> 
+        <script src="altas.js"></script>
+        <br>
+        <br>
+        <br>
+
+    <footer>
+        <div>   
+        <br>
+        <br>
+        <a class="redes" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a class="redes" href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="redes" href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        <a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <h6 style="color: white; text-align: center; font-size: 75%;"> Programadores 2023 Derechos Reservados </h6>
+        </div>
+    </footer>
+
+</body>
+</html>
